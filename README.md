@@ -66,7 +66,7 @@ See further in doc sprintf.
 ## Function History
 
 Version 1.01  
-Last updated : 2018-03-14 by *Anton Lydell*  
+Last updated : 2018-03-17 by *Anton Lydell*  
 
 This function (version 1.0) was originally created by:  
 *Anton Lydell*  

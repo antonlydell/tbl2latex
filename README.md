@@ -29,8 +29,7 @@ See further in the documentation for [`sprintf`](https://se.mathworks.com/help/m
   
 
 `tbl2latex('mytable.xlsx','tables', 'A1:C3', [3, 2], ['f','e'])`
-Read the content in file `mytable.xlsx` on sheet `tables` in range A1:C3 where the first column with numerical values  
-will be rounded to 3 decimals and the second one rounded to 2 decimals. The first column will be displayed as a float and the second column in exponential form.  
+Read the content in file `mytable.xlsx` on sheet `tables` in range A1:C3 where the first column with numerical values will be rounded to 3 decimals and the second one rounded to 2 decimals. The first column will be displayed as a float and the second column in exponential form.  
   
 #### Contents of the Excel file <mytable.xlsx>
 

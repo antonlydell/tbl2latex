@@ -253,10 +253,12 @@ colEntry = '%';
 str = 's ';
 endOfLine = ' \\\\ ';
 
-for j = 1:cols
-    if j == 1
+for j = 1:cols % Loop over the columns
+    if j == 1 & cols == 1 % if the table is only one column
+      formatStr = [colEntry, num2str(maxLengths(1)), str, endOfLine, '\n'];
+    elseif j == 1 % Initiate formatStr
       formatStr = [colEntry, num2str(maxLengths(1)), str];
-    elseif j == cols
+    elseif j == cols % End formatStr
       formatStr = [formatStr, colSep, colEntry, num2str(maxLengths(j)), str, endOfLine, '\n'];
     else
       formatStr = [formatStr, colSep, colEntry, num2str(maxLengths(j)), str];

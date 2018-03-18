@@ -21,13 +21,14 @@ The default value is 2 decimals.
 
 `tbl2latex(filename, sheet, range, dcl, type)`  
 `type` = A vector of characters containing the desired formatting of the numerical values for every column from left to right  
-using the formatSpec from the sprintf function.
+using the formatSpec from the `sprintf` function.
 The default value is 'f'.    
-See further in doc sprintf.  
+See further in the documentation for [`sprintf`](https://se.mathworks.com/help/matlab/ref/sprintf.html?searchHighlight=sprintf&s_tid=doc_srchtitle#btf_bfy-1_sep_shared-formatSpec).  
 
 ### Example
   
-`tbl2latex('mytable.xlsx','tables', 'A1:C3', [3, 2], ['f','e'])`      
+
+`tbl2latex('mytable.xlsx','tables', 'A1:C3', [3, 2], ['f','e'])`
 Read the content in file `mytable.xlsx` on sheet `tables` in range A1:C3 where the first column with numerical values  
 will be rounded to 3 decimals and the second one rounded to 2 decimals. The first column will be displayed as a float and the second column in exponential form.  
   
@@ -59,19 +60,27 @@ The default value is 2 decimals.
 
 `tbl2latex(tbl, dcl, type)`     
 `type` = A vector of characters containing the desired formatting of the numerical values for every column from left to right  
-using the formatSpec from the sprintf function.  
+using the formatSpec from the `sprintf` function.  
 The default value is 'f'.  
-See further in doc sprintf.  
+See further in the documentation for [`sprintf`](https://se.mathworks.com/help/matlab/ref/sprintf.html?searchHighlight=sprintf&s_tid=doc_srchtitle#btf_bfy-1_sep_shared-formatSpec).  
+
+## Foreign Characters
+
+The default character encoding for *MATLAB* on Windows is usually *windows-1252*. `tbl2latex.m` is written in *UTF-8*. <br>
+This will cause characters such as å, ä, ö not to display correctly. <br>
+
+The character encoding for your system can be shown by running the command: `slCharacterEncoding` in the MATLAB terminal. <br>
+To change the character encoding to *UTF-8* run the command:`slCharacterEncoding('UTF-8')`. 
 
 ## Function History
 
-Version 1.01  
-Last updated : 2018-03-17 by *Anton Lydell*  
+Version : 1.01  
+Last updated : 2018-03-14 by *Anton Lydell*  
 
 This function (version 1.0) was originally created by:  
 *Anton Lydell*  
 Student M.Sc., Energy and Environmental Technology  
 Linköping University  
 2018-02-25  
-https://www.linkedin.com/in/antonlydell/ 
+[LinkedIn](https://www.linkedin.com/in/antonlydell/) 
 

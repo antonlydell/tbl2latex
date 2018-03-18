@@ -172,7 +172,9 @@ idx = 1; % Start index for the dcl and type vectors
 % If empty inputs to dcl and type
 if isempty(dcl)
     dcl = dclDef * ones(1,cols); % Assign standard values
-    if nargin ~= 5 % Want to have the option of entering and empty dcl vector if wanting to keep dcl standard values and change the type vector
+    if nargin == 3 & ~ischar(filename) % If wanting standard values for dcl and change the type vector for MATLAB table and cell array
+      
+    elseif nargin ~= 5 % If wanting standard values for dcl and change the type vector for Excel file
       dclErrorMsg = sprintf(' WARNING: \n The entered <dcl> vector was empty and has been changed to the standard value <%d> to prevent the program from crashing.',dclDef);
     end % if
 end % if

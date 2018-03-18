@@ -66,11 +66,11 @@ See further in the documentation for [`sprintf`](https://se.mathworks.com/help/m
 
 ## Foreign Characters
 
-The default character encoding for *MATLAB* on Windows is usually *windows-1252*. `tbl2latex.m` is written in *UTF-8*. <br>
+The default character encoding for *MATLAB* on *Windows* is usually *windows-1252*. `tbl2latex.m` is written in *UTF-8*. <br>
 This will cause characters such as å, ä, ö not to display correctly. <br>
 
-The character encoding for your system can be shown by running the command: `slCharacterEncoding` in the MATLAB terminal. <br>
-To change the character encoding to *UTF-8* run the command:`slCharacterEncoding('UTF-8')`. 
+The character encoding for your system can be shown by running the command `slCharacterEncoding` in the *MATLAB* terminal. <br>
+To change the character encoding to *UTF-8* run the command `slCharacterEncoding('UTF-8')`. 
 
 ## Function History
 

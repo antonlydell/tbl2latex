@@ -73,7 +73,7 @@ To change the character encoding to *UTF-8* run the command `slCharacterEncoding
 ## Function History
 
 Version : 1.01  
-Last updated : 2018-03-14 by *Anton Lydell*  
+Last updated : 2018-03-18 by *Anton Lydell*  
 
 This function (version 1.0) was originally created by:  
 *Anton Lydell*  

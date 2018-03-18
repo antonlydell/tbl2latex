@@ -76,7 +76,7 @@ function tbl2latex(filename, sheet, range, dcl, type)
 % ==========================================================================================================
 %
 % Version 1.01
-% Last updated : 2018-03-14 by Anton Lydell
+% Last updated : 2018-03-18 by Anton Lydell
 %
 % =========================================================
 % This function (version 1.0) was originally created by:
